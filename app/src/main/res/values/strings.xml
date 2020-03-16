@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ThemeStyleSample</string>
+
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="sing_in">Sign In</string>
+    <string name="visit_type">Visit Type</string>
+    <string name="visit_type_social">Social</string>
+    <string name="visit_type_business">Business</string>
 </resources>

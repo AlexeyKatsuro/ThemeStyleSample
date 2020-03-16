@@ -6,13 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/app_name" />
+
     <TextView
+        android:id="@+id/text_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/login"
+        android:layout_marginStart="@dimen/edge_padding"
+        android:layout_marginTop="@dimen/edge_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/text_input_login"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/edge_padding"
+        android:layout_marginEnd="@dimen/edge_padding"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_login" />
+
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:layout_marginStart="@dimen/edge_padding"
+        android:layout_marginTop="@dimen/chain_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_login" />
+
+    <EditText
+        android:id="@+id/text_input_password"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/edge_padding"
+        android:layout_marginEnd="@dimen/edge_padding"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions|textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_password" />
+
+    <TextView
+        android:id="@+id/text_visit_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edge_padding"
+        android:layout_marginTop="@dimen/chain_padding"
+        android:text="@string/visit_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_password" />
+
+    <RadioGroup
+        android:id="@+id/group_visit_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edge_padding"
+        android:layout_marginEnd="@dimen/edge_padding"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_visit_type">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chain_padding_half"
+            android:layout_marginEnd="@dimen/chain_padding_half"
+            android:checked="true"
+            android:text="@string/visit_type_social" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/chain_padding_half"
+            android:layout_height="wrap_content"
+            android:text="@string/visit_type_business" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chain_padding"
+        android:layout_marginEnd="@dimen/edge_padding"
+        android:text="@string/sing_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_visit_type" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
