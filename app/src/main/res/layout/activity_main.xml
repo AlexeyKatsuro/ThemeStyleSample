@@ -12,14 +12,13 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
+            style="@style/Toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:elevation="@dimen/elevation_toolbar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:title="@string/app_name"
-            app:titleTextColor="@android:color/white" />
+            />
 
         <TextView
             android:id="@+id/text_login"
@@ -122,5 +121,5 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-   <include layout="@layout/bottom_sheet_forget_password"/>
+  <!-- <include layout="@layout/bottom_sheet_forget_password"/>-->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

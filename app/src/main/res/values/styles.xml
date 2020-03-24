@@ -1,11 +1,43 @@
 <!--res/values/styles.xml-->
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.MyApp" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.MyApp" parent="">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.MyApp" parent="@android:style/Widget"/>
+
+    <style name="Widget.MyApp.WelcomeView">
+        <item name="text">@string/welcome</item>
+        <item name="img">@drawable/ic_sun</item>
+        <item name="imgTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:elevation">@dimen/elevation_toolbar</item>
+    </style>
+
+    <style name="EditTextBig" parent="">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget">
+        <item name="android:background">#03A9F4</item>
+    </style>
+
+    <style name="Widget.YellowText">
+        <item name="android:textColor">#FFEB3B</item>
+    </style>
+
+    <style name="Widget.YellowText.Italic" parent="@style/Widget">
+        <item name="android:textStyle">italic</item>
     </style>
 
 </resources>
