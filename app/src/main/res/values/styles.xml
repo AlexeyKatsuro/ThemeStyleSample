@@ -1,16 +1,17 @@
 <!--res/values/styles.xml-->
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.MyApp" parent="">
+    <style name="Theme.MyApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarStyle">@style/Toolbar</item>
     </style>
 
-    <style name="Widget.MyApp" parent="@android:style/Widget"/>
+    <style name="Widget.MyApp" parent="android:Widget"/>
 
-    <style name="Widget.MyApp.WelcomeView">
+    <style name="WelcomeView">
         <item name="text">@string/welcome</item>
         <item name="img">@drawable/ic_sun</item>
         <item name="imgTint">@color/colorPrimary</item>
@@ -18,7 +19,7 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="Toolbar">
+    <style name="Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="titleTextColor">@android:color/white</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:elevation">@dimen/elevation_toolbar</item>

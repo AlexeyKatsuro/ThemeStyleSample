@@ -8,11 +8,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/white"
         tools:context=".MainActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            style="@style/Toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/chain_padding"
             android:layout_marginEnd="@dimen/edge_padding"
-            android:text="@string/sing_in"
+            android:text="Button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/group_visit_type" />
 
