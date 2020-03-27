@@ -43,7 +43,7 @@ class WelcomeView @JvmOverloads constructor(
         inflate(context, R.layout.view_welcome, this)
         // Load attributes
         val a = context.obtainStyledAttributes(
-            attrs, R.styleable.WelcomeView, defStyleAttr, 0
+            attrs, R.styleable.WelcomeView, defStyleAttr, defStyleRes
         )
 
         text = a.getString(R.styleable.WelcomeView_text)
