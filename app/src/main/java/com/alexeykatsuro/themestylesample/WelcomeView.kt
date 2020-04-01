@@ -17,7 +17,7 @@ class WelcomeView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,
-    defStyleRes: Int = R.style.WelcomeView
+    defStyleRes: Int = R.style.Widget_MyApp_WelcomeView
 ) : LinearLayout(context, attrs, defStyleAttr, defStyleRes) {
 
     private val textView by lazy { findViewById<TextView>(R.id.text) }

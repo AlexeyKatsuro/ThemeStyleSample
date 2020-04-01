@@ -76,6 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/edge_padding"
+
             android:layout_marginEnd="@dimen/edge_padding"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/chain_padding_half"
                 android:layout_marginEnd="@dimen/chain_padding_half"
-                android:checked="true"
+                tools:checked="true"
                 android:text="@string/visit_type_social" />
 
             <RadioButton
@@ -119,5 +120,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-  <!-- <include layout="@layout/bottom_sheet_forget_password"/>-->
+    <include layout="@layout/bottom_sheet_forget_password"/>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
