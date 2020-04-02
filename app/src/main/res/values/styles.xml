@@ -2,14 +2,13 @@
 <resources>
 
 
-
     <style name="Theme.MyApp.Pro">
         <item name="colorPrimary">@color/mtrl_orange_500</item>
         <item name="colorPrimaryDark">@color/mtrl_orange_700</item>
         <item name="colorAccent">@color/mtrl_green_500</item>
     </style>
 
-
+    <style name="Widget.MyApp" parent="android:Widget" />
 
     <style name="Widget.MyApp.WelcomeView">
         <item name="imgTint">?attr/colorPrimary</item>
@@ -21,6 +20,11 @@
         <item name="titleTextColor">?attr/colorOnPrimary</item>
         <item name="android:background">?attr/colorPrimary</item>
         <item name="android:elevation">@dimen/elevation_toolbar</item>
+    </style>
+
+    <style name="Widget.MyApp.Chip.Choice.Outline" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/background_chip_choice_outline</item>
+        <item name="chipStrokeWidth">0.5dp</item>
     </style>
 
 </resources>

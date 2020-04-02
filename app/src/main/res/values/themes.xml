@@ -11,10 +11,21 @@
         <item name="colorSecondaryVariant">@color/brand_teal_light</item>
 
         <item name="toolbarStyle">@style/Widget.MyApp.Toolbar</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyApp.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyApp.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.LargeComponent</item>
+
+        <item name="android:colorBackground">#FAFAFA</item>
     </style>
 
     <style name="ThemeOverlay.MyApp.Secondary.Blue" parent="">
         <item name="colorSecondary">@color/mtrl_blue</item>
         <item name="colorOnSecondary">@android:color/black</item>
     </style>
+
+    <style name="ThemeOverlay.MyApp.ChipGroup.ChipChoice" parent="">
+        <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Choice</item>
+    </style>
+
 </resources>
