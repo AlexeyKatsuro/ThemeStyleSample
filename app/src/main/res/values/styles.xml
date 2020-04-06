@@ -1,13 +1,5 @@
 <!--res/values/styles.xml-->
 <resources>
-
-
-    <style name="Theme.MyApp.Pro">
-        <item name="colorPrimary">@color/mtrl_orange_500</item>
-        <item name="colorPrimaryDark">@color/mtrl_orange_700</item>
-        <item name="colorAccent">@color/mtrl_green_500</item>
-    </style>
-
     <style name="Widget.MyApp" parent="android:Widget" />
 
     <style name="Widget.MyApp.WelcomeView">

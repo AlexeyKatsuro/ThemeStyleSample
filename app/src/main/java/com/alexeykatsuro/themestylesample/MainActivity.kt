@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Dynamic Theme assignment
+        setTheme(R.style.Theme_MyApp_Pro)
         super.onCreate(savedInstanceState)
         //Use ViewBinding to avoid findViewById
         binding = ActivityMainBinding.inflate(layoutInflater)
