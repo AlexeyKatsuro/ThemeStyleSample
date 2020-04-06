@@ -27,7 +27,7 @@
     </style>
 
     <style name="ThemeOverlay.MyApp.Secondary.Blue" parent="">
-        <item name="colorSecondary">@color/mtrl_blue</item>
+        <item name="colorSecondary">@color/mtrl_blue_500</item>
         <item name="colorOnSecondary">@android:color/black</item>
     </style>
 
